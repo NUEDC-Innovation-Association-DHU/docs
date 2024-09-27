@@ -1,10 +1,12 @@
 # 软件安装与环境配置
 
+[[ENGLISH]](https://nuedc-innovation-association-dhu.github.io/docs-stm32-en/introduction/Installation.html)
+
 ## Arm Keil MDK社区版安装
 
 ### 下载
 
-①打开https://www.keil.arm.com/mdk-community/
+①打开 [https://www.keil.arm.com/mdk-community/](https://www.keil.arm.com/mdk-community/)
 
 ![alt text](image/image0.png)
 
