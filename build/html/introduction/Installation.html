@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>安装 &mdash; docs-stm32 0.1 文档</title>
+  <title>软件安装与环境配置 &mdash; docs-stm32 0.1 文档</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -45,15 +45,29 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
-              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">入门</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="STM32.html">STM32</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">安装</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">软件安装与环境配置</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#arm-keil-mdk">Arm Keil MDK社区版安装</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">下载</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">安装</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pack">安装Pack</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#stm32cubemx">STM32CubeMX安装</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">注册账号</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">下载及安装</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">安装固件包</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Board.html">开发板总览</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../123.html">111</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../123.html">结语</a></li>
 </ul>
 
         </div>
@@ -71,7 +85,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">入门</a></li>
-      <li class="breadcrumb-item active">安装</li>
+      <li class="breadcrumb-item active">软件安装与环境配置</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/introduction/Installation.md.txt" rel="nofollow"> 查看页面源码</a>
       </li>
@@ -82,7 +96,92 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>安装<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<h1>软件安装与环境配置<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<section id="arm-keil-mdk">
+<h2>Arm Keil MDK社区版安装<a class="headerlink" href="#arm-keil-mdk" title="Link to this heading"></a></h2>
+<section id="id2">
+<h3>下载<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<p>①打开https://www.keil.arm.com/mdk-community/</p>
+<p><img alt="alt text" src="../_images/image0.png" /></p>
+<p>②点击网页中的Download μVision</p>
+<p>③填写个人信息</p>
+<p><img alt="alt text" src="../_images/image1.png" /></p>
+<p>④填写完毕后点击 Submit</p>
+<p>⑤点击MDK540.EXE并下载（此网页先不要关闭！）</p>
+<p><img alt="alt text" src="../_images/image2.png" /></p>
+</section>
+<section id="id3">
+<h3>安装<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>①下载后进行安装</p>
+<p>特别提醒：安装目录不建议C盘，且保证整个安装路径中以及pack的路径，不包含任何除了数字、英文字母、下划线以外的字符，否则软件无法正常运行！</p>
+<p>②打开(如果激活失败了，再重新以管理员模式打开)</p>
+<p><img alt="alt text" src="../_images/image3.png" /></p>
+<p>③软件启动</p>
+<p><img alt="alt text" src="../_images/image4.png" /></p>
+<p>注意：初次打开时可能会弹出Pack Installer窗口</p>
+<p><img alt="alt text" src="../_images/image5.png" /></p>
+<p>可以先暂且关闭这个窗口，等待后续步骤完成后再点击上方红圈内的按钮来打开Pack Installer</p>
+<p>④打开软件后点击左上角的File &gt; License Management</p>
+<p><img alt="alt text" src="../_images/image6.png" /></p>
+<p>⑤并且选择 User-Based License</p>
+<p><img alt="alt text" src="../_images/image7.png" /></p>
+<p>⑥点击 Activate / Deactive… 随后Arm证书管理器将会打开</p>
+<p><img alt="alt text" src="../_images/image8.png" /></p>
+<p>⑦点击右上角的License Server</p>
+<p>⑧填写https://mdk-preview.keil.arm.com作为证书地址并且点击Query</p>
+<p>⑨选择 Keil MDK Community… 并且点击 Activate</p>
+<p><img alt="alt text" src="../_images/image9.png" /></p>
+<p>⑩然后这个证书就会被激活</p>
+<p><img alt="alt text" src="../_images/image10.png" /></p>
+</section>
+<section id="pack">
+<h3>安装Pack<a class="headerlink" href="#pack" title="Link to this heading"></a></h3>
+<p>先下载</p>
+<p><a class="reference external" href="https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack">Keil.STM32F1xx_DFP.2.4.1.pack</a></p>
+<p>再双击打开安装</p>
+<p>最后不要忘记打开Pack Installer等待安装，当左下角显示</p>
+<p><img alt="alt text" src="../_images/image11.png" /></p>
+<p>且右下角进度条清空时</p>
+<p><img alt="alt text" src="../_images/image12.png" /></p>
+<p>则初步安装完毕，可以关闭窗口</p>
+<p>安装时间较长，请耐心等待（因为涉及到境外服务器的数据，在校园区域连接校园网下载可能会比宿舍网速更快）</p>
+</section>
+</section>
+<section id="stm32cubemx">
+<h2>STM32CubeMX安装<a class="headerlink" href="#stm32cubemx" title="Link to this heading"></a></h2>
+<section id="id4">
+<h3>注册账号<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<p>进入网站<a class="reference external" href="https://www.st.com.cn/content/st_com/zh/stm32cubemx.html">stm32cubemx</a></p>
+<p><img alt="alt text" src="../_images/image13.png" /></p>
+<p>点击下载STM32CubeMX</p>
+<p><img alt="alt text" src="../_images/image14.png" /></p>
+<p>选择Windows后选择右下角的下载软件</p>
+<p><img alt="alt text" src="../_images/image15.png" /></p>
+<p>选择创建MyST账户(邮箱用学校的)</p>
+<p><img alt="alt text" src="../_images/image16.png" /></p>
+<p>信息填写完毕后点击Register</p>
+</section>
+<section id="id5">
+<h3>下载及安装<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p><img alt="alt text" src="../_images/image17.png" /></p>
+<p>等待下载完毕后解压</p>
+<p><img alt="alt text" src="../_images/image18.png" /></p>
+<p>双击安装，点击Install for all users</p>
+<p><img alt="alt text" src="../_images/image19.png" /></p>
+<p>同样安装目录不建议C盘，且保证整个安装路径中不包含任何除了数字、英文字母、下划线以外的字符，否则软件无法正常运行！</p>
+</section>
+<section id="id6">
+<h3>安装固件包<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<p>找到STM32CubeMX</p>
+<p><img alt="alt text" src="../_images/image20.png" /></p>
+<p>打开软件后先点击上方的MyST进行登录</p>
+<p><img alt="alt text" src="../_images/image21.png" /></p>
+<p>随后点击右侧的INSTALL/REMOVE</p>
+<p><img alt="alt text" src="../_images/image22.png" /></p>
+<p>仅选择STM32F1中的第一个，点击右下角的Install(可能需要等待一会儿再安装)</p>
+<p><img alt="alt text" src="../_images/image23.png" /></p>
+</section>
+</section>
 </section>
 
 

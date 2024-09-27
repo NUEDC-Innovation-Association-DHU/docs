@@ -3,16 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-STM32 Learning Guide
+STM32动手实践
 ========================
 
 .. Add your content using ``reStructuredText`` syntax. See the
 .. `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 .. documentation for details.
 
+`[ENGLISH] <https://nuedc-innovation-association-dhu.github.io/docs-stm32-en/>`_
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents
+   :caption: 目录
 
    introduction/index
    123
