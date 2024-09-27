@@ -16,7 +16,10 @@ release = '0.1'
 
 extensions = [
      'recommonmark',
-     'sphinx_markdown_tables'
+     'sphinx_markdown_tables',
+     'sphinx.ext.autodoc',
+     'sphinx.ext.viewcode',
+     'sphinx.ext.githubpages'
 ]
 
 templates_path = ['_templates']
