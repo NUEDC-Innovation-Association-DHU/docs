@@ -10,7 +10,7 @@ STM32动手实践
 .. `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 .. documentation for details.
 
-`[ENGLISH] <https://nuedc-innovation-association-dhu.github.io/docs-stm32-en/>`_
+`[ENGLISH] <https://docs.dhu-nuedc.top/docs-stm32-en/>`_
 
 .. toctree::
    :maxdepth: 2
